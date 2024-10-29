@@ -25,19 +25,18 @@ Welcome to **The Store**, a web application designed for food lovers. This proje
 - JavaScript
 
 ## Folder Structure
-the-store/
-├── css/
-│   └── style.css           # Main stylesheet for styling the application
-├── image/
-│   ├── supplier_1.png      # Supplier image 1
-│   ├── supplier_2.jpg      # Supplier image 2
-│   └── ...                 # Other images
-├── javascript/
-│   └── javascript.js       # Main JavaScript file for functionality
-├── index.html              # Homepage
-├── food_menu.html          # Food menu page
-├── shop_menu.html          # Shop menu page
-├── contact_us.html         # Contact us page
-└── supplier_info.html      # Supplier info page
+
+| Folder/File              | Description                              |
+|--------------------------|------------------------------------------|
+| `the-store/`             | Root directory for the project           |
+| `css/style.css`          | Main stylesheet for the application      |
+| `images/`                | Contains images for suppliers and products |
+| `javascript/javascript.js` | Main JavaScript file for functionality  |
+| `index.html`             | Homepage of the application               |
+| `food_menu.html`         | Page for the food menu                   |
+| `shop_menu.html`         | Page for the shop menu                   |
+| `contact_us.html`        | Contact us page with a form              |
+| `supplier_info.html`     | Page providing information about suppliers |
+
 
 
