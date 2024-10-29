@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu - Grocery Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/javascript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-title">The Store</div>
+      <div class="mobile-menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="myNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="food_menu.html">Food Menu</a></li>
+          <li><a href="shop_menu.html">Shop Menu</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li><a href="supplier_info.html">Info Suppliers</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <img src="image/MainImage.png" alt="Food Item 1" />
+          <h1>Explore Our Delicious Food Menu!</h1>
+          <p>Choose from a wide variety of mouth-watering options.</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <article class="subtitle">
+          <h2>Food Items</h2>
+          <div class="supplier-grid">
+            <div class="product">
+              <img src="image/food_1.jpg" alt="Food Item 1" />
+              <p class="price">$10.00</p>
+              <button class="add-to-cart">Add to Trolley</button>
+            </div>
+            <div class="product">
+              <img src="image/food_2.jpg" alt="Food Item 2" />
+              <p class="price">$12.00</p>
+              <button class="add-to-cart">Add to Trolley</button>
+            </div>
+            <div class="product">
+              <img src="image/food_3.jpg" alt="Food Item 3" />
+              <p class="price">$8.00</p>
+              <button class="add-to-cart">Add to Trolley</button>
+            </div>
+            <div class="product">
+              <img src="image/food_4.jpg" alt="Food Item 4" />
+              <p class="price">$15.00</p>
+              <button class="add-to-cart">Add to Trolley</button>
+            </div>
+            <div class="product">
+              <img src="image/food_5.jpg" alt="Food Item 5" />
+              <p class="price">$9.50</p>
+              <button class="add-to-cart">Add to Trolley</button>
+            </div>
+            <div class="product">
+              <img src="image/food_6.jpg" alt="Food Item 6" />
+              <p class="price">$11.00</p>
+              <button class="add-to-cart">Add to Trolley</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 The Store. All rights reserved.</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        addToCartButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            alert("Item added to trolley!");
+            // Here you can implement the logic to add the item to the cart
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - The Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/javascript.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-title">The Store</div>
+
+      <div class="mobile-menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="myNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="food_menu.html">Food Menu</a></li>
+          <li><a href="shop_menu.html">Shop Menu</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li><a href="supplier_info.html">Info Suppliers</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you!</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <article class="subtitle">
+          <h2>Get in Touch</h2>
+          <form class="contact-form" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+
+        <article class="subtitle">
+          <h2>Our Location</h2>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6231.260942321248!2d178.0027097!3d-38.6573763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d66778d4d73af8b%3A0xac1b58e8b7cbbcce!2s549%20Childers%20Road%2C%20Te%20Hapara%2C%20Gisborne%204010!5e0!3m2!1sen!2snz!4v1730238374690!5m2!1sen!2snz"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+
+        <article class="about-us">
+          <h2>About Us</h2>
+          <p>
+            At The Store, we are passionate about serving you a delightful
+            variety of food that caters to all tastes. Whether you're looking
+            for a quick snack or a hearty meal, we have something for everyone.
+            Come explore our menu and indulge in our mouth-watering offerings!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 The Store. All rights reserved.</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
