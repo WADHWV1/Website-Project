@@ -34,6 +34,7 @@ header .mobile-menu .bar {
   height: 3px;
   background-color: #333;
 }
+
 header .mobile-menu .bar {
   width: 25px;
   height: 3px;
@@ -58,6 +59,7 @@ header.sticky {
 header .nav-title {
   font-size: 30px;
   font-weight: bold;
+  position: sticky;
 }
 
 header .mobile-menu {
@@ -164,46 +166,32 @@ main .hero .hero-copy .hero-cta {
   margin-bottom: 20px;
 }
 
-.image-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px 0;
-}
 
-.image-container img {
-  max-height: 100px;
-  max-width: 100px;
-  object-fit: fill;
-  border-radius: 8px;
-  margin: 0 5px;
-}
-/* Existing subtitle styles */
-.subtitle {
-  border: 1px solid #ffffff;
-  padding: 30px; /* Adjust this */
-  background-color: #ffa8a8;
-  margin-bottom: 20px;
-}
 
 /* Mobile styles for subtitle */
 @media only screen and (max-width: 768px) {
   .subtitle {
-    padding: 15px; /* Reduced padding for mobile */
-    font-size: 0.9em; /* Smaller font size for mobile */
-    overflow: hidden; /* Prevent overflow */
+    padding: 15px;
+    /* Reduced padding for mobile */
+    font-size: 0.9em;
+    /* Smaller font size for mobile */
+    overflow: hidden;
+    /* Prevent overflow */
   }
 
   .subtitle h2 {
-    font-size: 1.5em; /* Adjust heading size */
+    font-size: 1.5em;
+    /* Adjust heading size */
   }
 
   .supplier-grid {
-    grid-template-columns: 1fr; /* Keep a single column layout */
+    grid-template-columns: 1fr;
+    /* Keep a single column layout */
   }
 
   .product {
-    margin: 10px 0; /* Add margin for products */
+    margin: 10px 0;
+    /* Add margin for products */
   }
 }
 
@@ -233,8 +221,10 @@ main .hero .hero-copy .hero-cta {
 
 /* Existing styles */
 .product img {
-  max-width: 100%; /* Ensure images don't overflow */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure images don't overflow */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 /* Supplier section styles */
@@ -316,6 +306,7 @@ footer .socials li a {
     margin: 0;
   }
 }
+
 /* General styles */
 .contact-form {
   display: flex;
@@ -343,27 +334,33 @@ footer .socials li a {
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
   .contact-form {
-    padding: 15px; /* Add some padding on mobile */
+    padding: 15px;
+    /* Add some padding on mobile */
   }
 
   .map iframe {
-    height: 200px; /* Adjust height for smaller screens */
+    height: 200px;
+    /* Adjust height for smaller screens */
   }
 
   .about-us {
     padding: 20px;
-    text-align: center; /* Center text on mobile */
+    text-align: center;
+    /* Center text on mobile */
   }
 }
+
 .popup {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with transparency */
 }
 
 .popup-content {
@@ -371,7 +368,8 @@ footer .socials li a {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
   text-align: center;
 }
 

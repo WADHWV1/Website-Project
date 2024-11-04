@@ -1,171 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - The Store</title>
-    <!-- Link to external CSS for styling the page -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Link to external JavaScript, loaded after the HTML to ensure it runs after the DOM is ready -->
-    <script src="javascript/javascript.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <!-- Main title of the store -->
-      <div class="nav-title">The Store</div>
-      <!-- Mobile menu toggle button -->
-      <div class="mobile-menu" onclick="toggleNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - The Store</title>
+  <!-- Link to external CSS for styling the page -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Link to external JavaScript, loaded after the HTML to ensure it runs after the DOM is ready -->
+  <script src="javascript/javascript.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- Main title of the store -->
+    <div class="nav-title">The Store</div>
+    <!-- Mobile menu toggle button -->
+    <div class="mobile-menu" onclick="toggleNav()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="myNav">
+      <ul>
+        <!-- Navigation links to different pages -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="food_menu.html">Food Menu</a></li>
+        <li><a href="shop_menu.html">Shop Menu</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="supplier_info.html">Info Suppliers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section with a welcome message -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Welcome to The Store!</h1>
+        <p>
+          Your one-stop shop for all things delicious. Discover our specials
+          and order now!
+        </p>
+        <!-- Call-to-action button leading to the food menu -->
+        <a href="food_menu.html" class="hero-cta">Order Now!</a>
       </div>
-      <nav id="myNav">
-        <ul>
-          <!-- Navigation links to different pages -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="food_menu.html">Food Menu</a></li>
-          <li><a href="shop_menu.html">Shop Menu</a></li>
-          <li><a href="contact_us.html">Contact</a></li>
-          <li><a href="supplier_info.html">Info Suppliers</a></li>
-        </ul>
-      </nav>
-    </header>
+    </section>
 
-    <main>
-      <!-- Hero section with a welcome message -->
-      <section class="hero">
-        <div class="hero-copy">
-          <h1>Welcome to The Store!</h1>
-          <p>
-            Your one-stop shop for all things delicious. Discover our specials
-            and order now!
-          </p>
-          <!-- Call-to-action button leading to the food menu -->
-          <a href="food_menu.html" class="hero-cta">Order Now!</a>
+    <section class="content">
+      <!-- Drinks section -->
+      <article class="subtitle">
+        <h2>Drinks</h2>
+        <div class="supplier-grid">
+          <!-- Individual product listing -->
+          <div class="supplier">
+            <img src="image/coke_range.png" alt="Drink 1" />
+            <p class="price">$2.50</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+          <div class="supplier">
+            <img src="image/frucor_range(mdew).png" alt="Drink 2" />
+            <p class="price">$3.00</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+          <div class="supplier">
+            <img src="image/monster_can.png" alt="Drink 2" />
+            <p class="price">$3.00</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+          <div class="supplier">
+            <img src="image/v_range.png" alt="Food 2" />
+            <p class="price">$6.50</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
         </div>
-      </section>
+      </article>
 
-      <section class="content">
-        <!-- Drinks section -->
-        <article class="subtitle">
-          <h2>Drinks</h2>
-          <div class="image-container">
-            <!-- Individual product listing -->
-            <div class="product">
-              <img src="image/coke_range.png" alt="Drink 1" />
-              <p class="price">$2.50</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
-            <div class="product">
-              <img src="image/frucor_range(mdew).png" alt="Drink 2" />
-              <p class="price">$3.00</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
+      <!-- Food section -->
+      <article class="subtitle">
+        <h2>Food</h2>
+        <div class="supplier-grid">
+          <div class="supplier">
+            <img src="image/food_1.jpg" alt="Food 1" />
+            <p class="price">$5.00</p>
+            <button class="add-to-cart">Add to Trolley</button>
           </div>
-        </article>
-
-        <!-- Food section -->
-        <article class="subtitle">
-          <h2>Food</h2>
-          <div class="image-container">
-            <div class="product">
-              <img src="image/MainImage.png" alt="Food 1" />
-              <p class="price">$5.00</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
-            <div class="product">
-              <img src="image/MainImage.png" alt="Food 2" />
-              <p class="price">$6.50</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
+          <div class="supplier">
+            <img src="image/food_2.jpg" alt="Food 2" />
+            <p class="price">$6.50</p>
+            <button class="add-to-cart">Add to Trolley</button>
           </div>
-        </article>
-
-        <!-- Confectionery section -->
-        <article class="subtitle">
-          <h2>Confectionery</h2>
-          <div class="image-container">
-            <div class="product">
-              <img src="image/confectionary.png" alt="Confectionery 1" />
-              <p class="price">$1.50</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
-            <div class="product">
-              <img src="image/pantries_range.png" alt="Confectionery 2" />
-              <p class="price">$2.00</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
+          <div class="supplier">
+            <img src="image/food_3.jpg" alt="Food 2" />
+            <p class="price">$6.50</p>
+            <button class="add-to-cart">Add to Trolley</button>
           </div>
-        </article>
-
-        <!-- Pies section -->
-        <article class="subtitle">
-          <h2>Pies</h2>
-          <div class="image-container">
-            <div class="product">
-              <img src="image/maketu_pie.png" alt="Pie 1" />
-              <p class="price">$4.00</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
-            <div class="product">
-              <img src="image/pie_brand.png" alt="Pie 2" />
-              <p class="price">$5.00</p>
-              <button class="add-to-cart">Add to Trolley</button>
-            </div>
+          <div class="supplier">
+            <img src="image/food_4.jpg" alt="Food 2" />
+            <p class="price">$6.50</p>
+            <button class="add-to-cart">Add to Trolley</button>
           </div>
-        </article>
-
-        <!-- Contact Us section with a form -->
-        <article class="subtitle">
-          <h2>Contact Us</h2>
-          <form class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </article>
-
-        <!-- Suppliers section showcasing different suppliers -->
-        <article class="subtitle">
-          <h2>Our Proud Suppliers</h2>
-          <div class="supplier-grid">
-            <div class="supplier">
-              <img src="image/supplier_1.png" alt="Supplier 1" />
-              <p>Supplier 1</p>
-            </div>
-            <div class="supplier">
-              <img src="image/supplier_2.jpg" alt="Supplier 2" />
-              <p>Supplier 2</p>
-            </div>
-            <div class="supplier">
-              <img src="image/supplier_3.png" alt="Supplier 3" />
-              <p>Supplier 3</p>
-            </div>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>© 2024 The Store. All rights reserved.</p>
-        <ul class="footer-links">
-          <!-- Footer links for privacy policy, terms of service, and help center -->
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Help Center</a></li>
-        </ul>
-        <div class="socials">
-          <!-- Social media links -->
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
         </div>
+      </article>
+
+      <!-- Confectionery section -->
+      <article class="subtitle">
+        <h2>Confectionery</h2>
+        <div class="supplier-grid">
+          <div class="supplier">
+            <img src="image/confectionary.png" alt="Confectionery 1" />
+            <p class="price">$1.50</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+          <div class="supplier">
+            <img src="image/grocery_range.png" alt="Confectionery 2" />
+            <p class="price">$2.00</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Pies section -->
+      <article class="subtitle">
+        <h2>Pies</h2>
+        <div class="supplier-grid">
+          <div class="supplier">
+            <img src="image/maketu_pie.png" alt="Pie 1" />
+            <p class="price">$4.00</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+          <div class="supplier">
+            <img src="image/pie_brand.png" alt="Pie 2" />
+            <p class="price">$5.00</p>
+            <button class="add-to-cart">Add to Trolley</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Contact Us section with a form -->
+      <article class="subtitle">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+
+      <!-- Suppliers section showcasing different suppliers -->
+      <article class="subtitle">
+        <h2>Our Proud Suppliers</h2>
+        <div class="supplier-grid">
+          <div class="supplier">
+            <img src="image/supplier_1.png" alt="Supplier 1" />
+            <p>Supplier 1</p>
+          </div>
+          <div class="supplier">
+            <img src="image/supplier_2.jpg" alt="Supplier 2" />
+            <p>Supplier 2</p>
+          </div>
+          <div class="supplier">
+            <img src="image/supplier_3.png" alt="Supplier 3" />
+            <p>Supplier 3</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-button">&times;</span>
+        <p>Item added to trolley!</p>
       </div>
-    </footer>
-  </body>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 The Store. All rights reserved.</p>
+      <ul class="footer-links">
+        <!-- Footer links for privacy policy, terms of service, and help center -->
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+      <div class="socials">
+        <!-- Social media links -->
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
