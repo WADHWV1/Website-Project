@@ -2,202 +2,260 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - The Store</title>
-  <!-- Link to external CSS for styling the page -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Link to external JavaScript, loaded after the HTML to ensure it runs after the DOM is ready -->
-  <script src="javascript/javascript.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>main page </title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!--Font Selection/Import-->
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet" />
 </head>
 
+
+
+
 <body>
-  <header>
-    <!-- Main title of the store -->
-    <div class="nav-title">The Store</div>
-    <!-- Mobile menu toggle button -->
-    <div class="mobile-menu" onclick="toggleNav()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    <nav id="myNav">
-      <ul>
-        <!-- Navigation links to different pages -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="food_menu.html">Food Menu</a></li>
-        <li><a href="shop_menu.html">Shop Menu</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
-        <li><a href="supplier_info.html">Info Suppliers</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav id="NAV" class="navbar navbar-expand-lg bg-body-tertiary text-white py-3">
+    <div class="container-fluid">
 
-  <main>
-    <!-- Hero section with a welcome message -->
-    <section class="hero">
-      <div class="hero-copy">
-        <h1>Welcome to The Store!</h1>
-        <p>
-          Your one-stop shop for all things delicious. Discover our specials
-          and order now!
-        </p>
-        <!-- Call-to-action button leading to the food menu -->
-        <a href="food_menu.html" class="hero-cta">Order Now!</a>
+      <!-- Left: Logo + Title -->
+      <div class="d-flex align-items-center">
+        <img id="NAV-image" src="images/global.png" alt="Logo" class="img-fluid me-2"
+          style="width: 40px; height: 40px;" />
+        <a id="NAV-text" class="navbar-brand text-dark" href="#">itwd6.408</a>
       </div>
-    </section>
 
-    <section class="content">
-      <!-- Drinks section -->
-      <article class="subtitle">
-        <h2>Drinks</h2>
-        <div class="supplier-grid">
-          <!-- Individual product listing -->
-          <div class="supplier">
-            <img src="image/coke_range.png" alt="Drink 1" />
-            <p class="price">$2.50</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/frucor_range(mdew).png" alt="Drink 2" />
-            <p class="price">$3.00</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/monster_can.png" alt="Drink 2" />
-            <p class="price">$3.00</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/v_range.png" alt="Food 2" />
-            <p class="price">$6.50</p>
-            <button class="add-to-cart">Add to Trolley</button>
+      <!-- Navbar Toggle Button (for mobile collapse) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Centered Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" aria-current="page" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="forms.html">forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="xml & rss.html">xml/json</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">javascript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">research</a>
+          </li>
+        </ul>
+
+        <!-- Search Icon Toggle + Search Bar  -->
+        <div class="d-flex align-items-center ms-auto">
+          <!-- Search Icon Button triggers collapse -->
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse"
+            aria-expanded="false" aria-controls="searchCollapse">
+            <i class="bi bi-search text-dark fs-5"></i>
+          </button>
+
+          <!-- Collapsible Search Bar -->
+          <div class="collapse collapse-horizontal ms-2" id="searchCollapse">
+            <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
           </div>
         </div>
-      </article>
 
-      <!-- Food section -->
-      <article class="subtitle">
-        <h2>Food</h2>
-        <div class="supplier-grid">
-          <div class="supplier">
-            <img src="image/food_1.jpg" alt="Food 1" />
-            <p class="price">$5.00</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/food_2.jpg" alt="Food 2" />
-            <p class="price">$6.50</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/food_3.jpg" alt="Food 2" />
-            <p class="price">$6.50</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/food_4.jpg" alt="Food 2" />
-            <p class="price">$6.50</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+  <!--Section 1 : Show Case  -->
+  <div id="showcase-section" class="d-flex justify-content-center align-items-center">
+    <div id="showcase-box" class="container-fluid text-center col-sm-12 col-md-6 col-lg-6">
+      <div class="row justify-content-center border border-white">
+        <div id="show" class="text-center text-white">
+          <h5>Advanced Internet and Web Learning Portfolio</h5>
+          <h1>I am Varun Wadhwa</h1>
+          <p>And I'm a Web developer</p>
         </div>
-      </article>
-
-      <!-- Confectionery section -->
-      <article class="subtitle">
-        <h2>Confectionery</h2>
-        <div class="supplier-grid">
-          <div class="supplier">
-            <img src="image/confectionary.png" alt="Confectionery 1" />
-            <p class="price">$1.50</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/grocery_range.png" alt="Confectionery 2" />
-            <p class="price">$2.00</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Pies section -->
-      <article class="subtitle">
-        <h2>Pies</h2>
-        <div class="supplier-grid">
-          <div class="supplier">
-            <img src="image/maketu_pie.png" alt="Pie 1" />
-            <p class="price">$4.00</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-          <div class="supplier">
-            <img src="image/pie_brand.png" alt="Pie 2" />
-            <p class="price">$5.00</p>
-            <button class="add-to-cart">Add to Trolley</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- Contact Us section with a form -->
-      <article class="subtitle">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </article>
-
-      <!-- Suppliers section showcasing different suppliers -->
-      <article class="subtitle">
-        <h2>Our Proud Suppliers</h2>
-        <div class="supplier-grid">
-          <div class="supplier">
-            <img src="image/supplier_1.png" alt="Supplier 1" />
-            <p>Supplier 1</p>
-          </div>
-          <div class="supplier">
-            <img src="image/supplier_2.jpg" alt="Supplier 2" />
-            <p>Supplier 2</p>
-          </div>
-          <div class="supplier">
-            <img src="image/supplier_3.png" alt="Supplier 3" />
-            <p>Supplier 3</p>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <span class="close-button">&times;</span>
-        <p>Item added to trolley!</p>
       </div>
     </div>
+  </div>
+
+  <!-- Section 2 : BIO -->
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- BIO Section -->
+      <div id="bio" class="col-sm-12 col-md-6 col-lg-6 border border-danger">
+        <h2>Bio</h2>
+        <div class="row align-items-start">
+          <!-- Image Column -->
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <img id="bio-image" class="img-fluid " src="images/portrait-icon.jpg" alt="Personal Avatar" />
+          </div>
+          <!-- Text Column -->
+          <div class="col-12 col-md-8">
+            <p>
+              Hi! I'm Varun Wadhwa. I'm passionate about technology, design, and creative problem-solving.
+              I enjoy sketching, exploring new music, and hiking. I'm taking this paper to deepen my understanding
+              of web development and digital media. I hope to gain practical skills and insights that will help me
+              in future projects and collaborations.
+            </p>
+          </div>
+        </div>
+      </div>
 
 
-  </main>
+      <!--Section 3 : Web Technologies -->
+      <div id="webtech" class="col-md-6 border border-danger">
+        <h2>My Web Technologies</h2>
+        <h5>Top 5 Web Technologies I Use</h5>
+        <ol>
+          <li><em>Web Hosting:</em> GitHub</li>
+          <li><em>Web Design:</em> HTML, CSS, and JavaScript</li>
+          <li><em>Database:</em> SQL</li>
+          <li><em>Code Editor:</em> Visual Studio (VS) Code</li>
+          <li><em>Web Framework:</em> React, Bootstrap</li>
+        </ol>
+      </div>
 
-  <footer>
-    <div class="footer-content">
-      <p>© 2024 The Store. All rights reserved.</p>
-      <ul class="footer-links">
-        <!-- Footer links for privacy policy, terms of service, and help center -->
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Help Center</a></li>
-      </ul>
-      <div class="socials">
-        <!-- Social media links -->
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+
+
+  <!-- Section 4 : Web Competence Section -->
+  <div id="Web" class="container-fluid py-4 border border-danger">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h2>MY WEB DEVELOPMENT COMPETENCES</h2>
+      </div>
+
+      <!-- HTML5 Flipbox -->
+      <div class="col-sm-12 col-md-4 mb-4 d-flex justify-content-center">
+        <div class="flipbox">
+          <div class="flipbox-inner">
+            <div class="flipbox-front">
+              <div class="flipbox-text">
+                <h4>MARK-UP (HTML5)</h4>
+              </div>
+              <div class="flipbox-image">
+                <img src="images/html5.png" alt="HTML logo" class="img-fluid rounded-circle" />
+              </div>
+            </div>
+            <div class="flipbox-back">
+              <p>Skilled in structuring semantic and
+                accessible web content using HTML5.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS3 Flipbox -->
+      <div class="col-sm-12 col-md-4 mb-4 d-flex justify-content-center">
+        <div class="flipbox">
+          <div class="flipbox-inner">
+            <div class="flipbox-front">
+              <div class="flipbox-text">
+                <h4>STYLING (CSS3)</h4>
+              </div>
+              <div class="flipbox-image">
+                <img src="images/css.png" alt="CSS logo" class="img-fluid rounded-circle" />
+              </div>
+            </div>
+            <div class="flipbox-back">
+              <p>Experienced in designing responsive and visually appealing layouts with CSS3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript Flipbox -->
+      <div class="col-sm-12 col-md-4 mb-4 d-flex justify-content-center">
+        <div class="flipbox">
+          <div class="flipbox-inner">
+            <div class="flipbox-front">
+              <div class="flipbox-text">
+                <h4>JAVASCRIPT</h4>
+              </div>
+              <div class="flipbox-image">
+                <img src="images/javascript.png" alt="JavaScript logo" class="img-fluid rounded-circle" />
+              </div>
+            </div>
+            <div class="flipbox-back">
+              <p>Proficient in developing dynamic and interactive web functionalities using JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Section 5 : Statement of Authenticity-->
+  <div id="Statement" class="rows">
+
+    <div class="col-12 ">
+      <h2>STATEMENT OF AUTHENTICITY</h2>
+      <p>
+        I confirm that: </p>
+
+      <p> This is an original assessment and is entirely my own work.
+        It contains no material previously published or written by another
+        person or myself except where due acknowledgement is made in the
+        text.
+      </p>
+
+      <p> No material which to a substantial extent, has been submitted for any
+        other academic course, is included without acknowledgement.
+      </p>
+    </div>
+  </div>
+
+  <footer id="Footer" class=" py-3">
+    <div class="container">
+      <div class="row text-md-start">
+
+        <!-- Social Icons -->
+        <div id="social" class="col-12 col-md-4 mb-2 mb-md-0 d-flex =">
+          <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="images/insta.jpeg" alt="Instagram" /></a>
+          <a href="#"><img src="images/YouTube.png" alt="YouTube" /></a>
+        </div>
+
+        <div class="row container-fluid">
+          <!-- Copyright -->
+          <div id="footer-text" class="col-12 col-md-6 mb-2 ">
+            <em>&copy; 2024 Varun Wadhwa</em>
+          </div>
+
+          <!-- Privacy Policy -->
+          <div id="footer-text2" class="col-12 col-md-6 ">
+            <a>Privacy Policy</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
+
+
+  <!--JavaScript File for Assesment-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="js/project.js"></script>
+
 </body>
 
 </html>
